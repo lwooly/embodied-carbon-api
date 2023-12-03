@@ -1,22 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const swaggerUI = require('swagger-ui-express');
-const swaggerJsDoc = require('swagger-jsdoc');
-
-const swaggerOptions = {
-    definition: {
-      openapi: '3.1.0',
-      info: {
-        title: 'Product Environmental Metrics API',
-        version: '1.0.0',
-      },
-    },
-    apis: ['./controllers/product.controllers.js']
-  };
-
-  const swaggerDocs = swaggerJsDoc(swaggerOptions);
-
-  console.log(swaggerDocs)
+const swaggerDocs = require('../swagger')
 
 
 const {
