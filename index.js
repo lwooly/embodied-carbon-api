@@ -8,3 +8,5 @@ server.listen(PORT, () => {
     console.log(`Server running on: http://localhost:${PORT}`)
     console.log(`Node env: ${NODE_ENV}`)
 });
+
+module.exports = server;

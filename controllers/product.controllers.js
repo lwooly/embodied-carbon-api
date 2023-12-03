@@ -1,5 +1,35 @@
 const Product = require("../models/products");
 
+
+/**
+ * @openapi
+ * /products/{id}:
+ *   get:
+ *     summary: Retrieves products
+ *     description: Returns all products or a specific product by ID
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: false
+ *         schema:
+ *           type: string
+ *         description: The product ID
+ *     responses:
+ *       200:
+ *         description: A list of products or a single product
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Product'
+ *       404:
+ *         description: Product not found
+ *       500:
+ *         description: Internal Server Error
+ */
+
+
 exports.getProducts = async function (req, res) {
   let query = {};
   if (req.params.id) {
