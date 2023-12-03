@@ -21,16 +21,18 @@ const swaggerOptions = {
 
 const {
     getProducts,
+    getProductById,
     addProduct,
     updateProduct,
     removeProduct,
 } = require('../controllers/product.controllers');
 
 router
-    .get('/product/:id?', getProducts)
-    .post('/product/', addProduct)
-    .put('/product/:id', updateProduct)
-    .delete('/product/:id', removeProduct)
+    .get('/products', getProducts)
+    .get('/products/:id', getProductById)
+    .post('/products/', addProduct)
+    .put('/products/:id', updateProduct)
+    .delete('/products/:id', removeProduct)
     .use('/api-docs', swaggerUI.serve)
     .get('/api-docs', swaggerUI.setup(swaggerDocs))
 
