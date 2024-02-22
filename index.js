@@ -9,4 +9,4 @@ server.listen(PORT, () => {
     console.log(`Node env: ${NODE_ENV}`)
 });
 
-module.exports = server;
+module.exports = server; 
