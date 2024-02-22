@@ -28,6 +28,8 @@ The API is structured around the following endpoints:
 
 Swagger documentation is available at `/api-docs`, providing a detailed overview of all endpoints, request bodies, and responses.
 
+![Swagger Screenshot](/screenshots/swaggerDocs.png "Swagger Screenshot")
+
 
 
 ## Getting Started
