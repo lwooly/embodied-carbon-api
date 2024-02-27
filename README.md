@@ -1,6 +1,6 @@
 # Construction Product Sustainability Credentials API
 
-Welcome to the Construction Product Sustainability Credentials API, designed to provide sustainability information on construction products. This API is built with Express.js for the server framework, MongoDB for data storage, Mongoose for data modeling, and is thoroughly documented with Swagger for ease of use. Proof of concept aimed at developers, researchers, and sustainability professionals in the construction industry, this API delivers  key data on products' environmental impact, including CO2 emissions, lifecycle stages, and more. A WIP tool to be integrated with BIM workflows.
+The Construction Product Sustainability Credentials API is designed to provide sustainability information on construction products. This API is built with Express.js for the server framework, MongoDB for data storage, Mongoose for data modeling, and is thoroughly documented with Swagger for ease of use. Proof of concept aimed at developers, researchers, and sustainability professionals in the construction industry, this API delivers  key data on products' environmental impact, including CO2 emissions, lifecycle stages, and more. A WIP tool to be integrated with BIM workflows.
 
 ## Technology Stack
 
